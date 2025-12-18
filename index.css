@@ -1,7 +1,8 @@
 :root {
   --primary: #fd6e0a;
-  --bg: #fff8f3;
+  --bg: #fae9dd;
   --text: #181818;
+  --white: #ffffff;
   --muted: #757575;
   --border: #e7e7e7;
 }
@@ -93,24 +94,24 @@ header {
 
 .btn {
   background: var(--primary);
-  color: white;
+  color: var(--bg);
   padding: 12px 18px;
   border-radius: 8px;
   font-weight: 700;
   display: inline-block;
 }
 
-.avatar {
+/* .avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: #eee;
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   margin: auto;
-}
+} */
 
 .avatar img {
   width: 300px;
@@ -154,7 +155,7 @@ section {
 }
 
 .skill-card {
-  background: white;
+  background: var(--white);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 18px;
@@ -170,7 +171,7 @@ section {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: #fff1e6;
+  background: var(--bg);
   border: 1px solid #ffe0c7;
   display: flex;
   align-items: center;
@@ -195,18 +196,28 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  /* background-color: #38a169; */
 }
 
+
 .project {
-  background: white;
+  background: var(--white);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  /* background-color: #38a169; */
 }
+
+.project:hover {
+  transform: translateY(14px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
 
 .project img {
   width: 100%;
+  height: 180px;      
   border-radius: 8px;
   margin-bottom: 16px;
 }
@@ -219,12 +230,14 @@ section {
   font-size: 14px;
   color: #555;
   margin-bottom: 12px;
+  display: flex;
+  align-content: space-between;
 }
-
+ /*botão  projetos */
 .project-link {
   display: inline-block;
   background: #2f855a;
-  color: white;
+  color: var(--white);
   padding: 10px 16px;
   border-radius: 6px;
   text-decoration: none;
@@ -244,7 +257,7 @@ section {
 }
 
 .connect-card {
-  background: white;
+  background: var(--white);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 26px;
@@ -281,7 +294,7 @@ section {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  /* background-color: #fd6e0a; */
+  background-color: var(--bg);
 }
 
 .form-input {
@@ -335,4 +348,18 @@ footer {
   .introduction h1 {
     font-size: 36px;
   }
+}
+
+
+#formBusca {
+  margin: 16px 0 24px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-width: 520px;
+}
+
+#formBusca input[type="text"] {
+  width: 340px;
+  max-width: 100%;
 }
