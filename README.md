@@ -3,7 +3,7 @@
 Portfólio pessoal para apresentar meus projetos e habilidades em TI.
 
 ## 🌐 Acesso ao site
-- GitHub Pages: https://heloeng.github.io/portif-lio_projetos/
+- GitHub Pages: https://heloeng.github.io/portfolio_projetos/
 
 ## 📌 Seções do site
 - **Apresentação**
