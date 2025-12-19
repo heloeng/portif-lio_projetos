@@ -1,5 +1,5 @@
 /* =========================================================
-   1) TOKENS / VARIÁVEIS
+   1) VARIÁVEIS
    ========================================================= */
 :root {
   --primary: #fd6e0a;
@@ -16,7 +16,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* deixe sempre ligado */
+  box-sizing: border-box; 
 }
 
 html,
@@ -80,7 +80,7 @@ header {
 }
 
 /* =========================================================
-   5) HERO / INTRODUÇÃO
+   5) INTRODUÇÃO
    ========================================================= */
 .introduction {
   padding: 30px 0;
@@ -121,7 +121,7 @@ header {
   height: 300px;
   border-radius: 50%;
   background: #eee;
-  display: block;     /* melhor do que flex em <img> */
+  display: block;     
   margin: 0 auto;     /* centraliza */
 }
 
@@ -218,7 +218,7 @@ section {
   height: 180px;
   border-radius: 8px;
   margin-bottom: 16px;
-  object-fit: cover; /* deixa a imagem bonita no corte */
+  object-fit: cover; 
   display: block;
 }
 
@@ -350,7 +350,7 @@ footer {
     font-size: 22px;
   }
 
-  /* hero empilha */
+  /* empilha */
   .introduction-grid {
     grid-template-columns: 1fr;
     justify-items: center;
