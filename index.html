@@ -1,230 +1,421 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfólio de [Heloiza Mendes] - projetos, habilidades e contato."
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js" defer></script>
-    <title>Portfólio - TI</title>
+    <title>Portfólio | Heloiza Mendes</title>
   </head>
 
   <body>
-    <!-- header: menu / seção apresentação -->
-    <header class="container">
-      <!-- seção introduçção / o que faço / portifolio / conectar -->
-      <nav class="nav">
-        <div class="site-title">Heloiza<span>Mendes</span></div>
-        <div class="menu">
-          <a href="#sobre">Sobre</a>
-          <a href="#oque-faco">O que eu faço</a>
-          <a href="#portfolio">Portfólio</a>
-          <a href="#conectar">Vamos nos conectar</a>
-        </div>
-      </nav>
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+    </div>
 
-      <div class="introduction">
-        <div class="introduction-grid">
-          <div>
-            <h1>Olá, eu sou Heloiza Mendes</h1>
-            <p>
-              Formada em Engenharia de Computação e Engenharia de Software,
-              atualmente estudando Desenvolvimento Web Full Stack.
-            </p>
-            <a class="btn" href="#conectar">Fale comigo</a>
-          </div>
-          <div class="avatar"><img src="img/img_user.JPG" /></div>
-        </div>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-name">Heloiza Mendes</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <span class="sr-only">Abrir menu</span>
+            <span aria-hidden="true">☰</span>
+          </button>
+
+          <ul id="menu" class="nav-list">
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main>
-      <section id="oque-faco">
-        <div class="container">
-          <!-- seção introduçção / o que faço / portifolio / conectar -->
-          <h2 class="title">O que eu faço</h2>
-          <!--  "o que eu faço / portifolio"-->
-          <p class="subtitle">
-            <!--  "o que eu faço / portifolio"-->
-            Conhecimentos técnicos adquiridos.
-          </p>
 
-          <div class="skill-grid">
-            <div class="skill-card">
-              <div class="skill-icon">🌐</div>
-              <h3>Introdução às Redes e à Internet</h3>
-              <p>Conceitos básicos: redes, internet, protocolos e serviços.</p>
+    <main id="conteudo">
+      <!-- HERO -->
+      <section class="hero" id="topo" aria-label="Apresentação">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">
+              Engenharia de Compução • Engenharia de Software
+            </p>
+            <h1 class="hero-title">
+              Eu crio soluções simples, bonitas e funcionais.
+            </h1>
+            <p class="hero-subtitle">
+              Aqui você encontra meus projetos, minhas habilidades e como falar
+              comigo.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+              <a class="btn btn-ghost" href="#contato">Falar comigo</a>
             </div>
 
-            <div class="skill-card">
-              <div class="skill-icon">🔧</div>
-              <h3>Controle de Versão</h3>
-              <p>Git/GitHub: commits, branches, merge e pull request.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon">🧱</div>
-              <h3>HTML</h3>
-              <p>Estrutura semântica, formulários e acessibilidade.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon">🎨</div>
-              <h3>CSS</h3>
-              <p>Layout responsivo, flexbox, grid e boas práticas.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-icon">✨</div>
-              <h3>UX/UI</h3>
-              <p>
-                Princípios de usabilidade, protótipos e consistência visual.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio">
-        <div class="container">
-          <!-- seção introduçção / o que faço / portifolio / conectar -->
-          <h2 class="title">Portfólio</h2>
-          <!--  "o que eu faço / portifolio"-->
-          <p class="subtitle">Projetos desenvolvidos durante meus estudos.</p>
-          <!--  "o que eu faço / portifolio"-->
-
-          <div class="portfolio-grid">
-            <div class="project">
-              <img
-                src="img/projeto_01.JPG"
-                alt="Preview do site Cardápio Vegetariano"
-              />
-
-              <h3>Cardápio Vegetariano</h3>
-
-              <p>
-                Site de cardápio vegetariano desenvolvido com HTML e CSS, com
-                layout
-              </p>
-
-              <a
-                href="https://heloeng.github.io/cardapio_vegetariano/"
-                target="_blank"
-                class="project-link"
-              >
-                Ver site
-              </a>
-            </div>
-
-            <div class="project">
-              <img
-                src="img/projeto_02.JPG"
-                alt="Preview do Portfólio em Flutter Web"
-              />
-
-              <h3>Portfólio em Flutter Web</h3>
-
-              <p>
-                Portfólio pessoal desenvolvido em Flutter Web, com navegação
-                entre páginas.
-              </p>
-
-              <a
-                href="https://heloeng.github.io/portif-lio/"
-                target="_blank"
-                class="project-link"
-              >
-                Ver site
-              </a>
-            </div>
-
-            <div class="project">
-              <img src="img/protótipo_figma.JPG" alt="prótipo figma" />
-              <h3>Prótotipo Figma</h3>
-              <p>
-                Protótipo de interface desenvolvido no Figma, focado em UX/UI,
-                componentes reutilizáveis.
-              </p>
-              <a
-                href="https://www.figma.com/proto/oBs3INKU8EfF1zxBB6J3os/Prot%C3%B3tipo---Portif%C3%B3lio?node-id=0-1&t=TY5dXl0cEYjCV6I6-1"
-                target="_blank"
-                class="project-link"
-              >
-                Ver site
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="conectar">
-        <div class="container">
-          <!-- seção introduçção / o que faço / portifolio / conectar -->
-          <div class="connect-grid">
-            <!-- lado esquerdo -->
-            <div class="connect-card">
-              <h2 class="connect-title">Vamos nos conectar</h2>
-              <p class="connect-subtitle">
-                Preencha o formulário para entrar em contato. Você também pode
-                me achar nas redes.
-              </p>
-
-              <div class="connect-icons">
+            <ul class="hero-meta" aria-label="Atalhos">
+              <li>
                 <a
-                  class="icon-box"
-                  href="https://www.linkedin.com/in/heloiza-mendes-785708214/"
-                  target="_blank"
-                  aria-label="LinkedIn"
-                >
-                  <img
-                    src="img/linkedin.png"
-                    alt="Perfil da Heloiza Mendes no LinkedIn"
-                  />
-                </a>
-
-                <a
-                  class="icon-box"
                   href="https://github.com/heloeng"
                   target="_blank"
-                  aria-label="github"
+                  aria-label="Abrir meu GitHub"
+                  >GitHub</a
                 >
-                  <img
-                    src="img/github.png"
-                    alt="Perfil da Heloiza Mendes no GitHub"
-                  />
-                </a>
-                <div class="icon-box">✉️</div>
-              </div>
-            </div>
-            <!-- lado direito-->
-            <div class="connect-card">
-              <h2 class="connect-title">Me mande uma mensagem</h2>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/heloiza-mendes-785708214/"
+                  target="_blank"
+                  aria-label="Abrir meu LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="#" aria-label="Baixar meu currículo em PDF"
+                  >Currículo</a
+                >
+              </li>
+            </ul>
+          </div>
 
-              <form id="contactForm">
-                <input
-                  class="form-input"
-                  type="text"
-                  placeholder="Seu nome"
-                  required
-                />
-                <input
-                  class="form-input"
-                  type="email"
-                  placeholder="Seu email"
-                  required
-                />
-                <textarea
-                  class="form-input"
-                  placeholder="Sua mensagem"
-                  required
-                ></textarea>
+          <div class="hero-card" aria-label="Cartão de perfil">
+            <img
+              class="avatar"
+              src="img/img_user.JPG"
+              alt="Foto de perfil de Seu Nome"
+            />
+            <div class="hero-card-body">
+              <h2 class="hero-card-title">Heloiza Mendes</h2>
+              <p class="hero-card-desc">
+                Dev focada em projetos práticos e evolução constante. Formação
+                em andamento: Desenvolvimento Full Stack pela Alpha EdTech.
+              </p>
 
-                <button class="btn-send" type="submit">Enviar</button>
-                <p id="formMsg" class="subtitle"></p>
-              </form>
+              <dl class="mini-stats">
+                <div>
+                  <dt>Foco</dt>
+                  <dd>Frontend / Backend / Fullstack</dd>
+                </div>
+                <div>
+                  <dt>Stack</dt>
+                  <dd>C • Javascript • SQL • Java</dd>
+                </div>
+                <div>
+                  <dt>Local</dt>
+                  <dd>São Paulo / Brasil</dd>
+                </div>
+              </dl>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section class="section" id="projetos" aria-label="Projetos">
+        <div class="container">
+          <header class="section-head">
+            <h2>Projetos em destaque</h2>
+            <p>
+              Alguns trabalhos que mostram minha forma de pensar e construir.
+            </p>
+          </header>
+
+          <div class="grid projects-grid">
+            <!-- Card 1 -->
+            <article class="card project-card">
+              <div class="card-media">
+                <img
+                  src="img/projeto_vegetariano.JPG"
+                  alt="Imagem do projeto Tabela FIPE"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Cardápio Vegetariano</h3>
+                <p class="card-text">
+                  Landing page desenvolvida para visualizar cardárpios
+                  vegetarianos
+                </p>
+
+                <ul class="tags" aria-label="Tecnologias do projeto">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+
+                <div class="card-actions">
+                  <a
+                    class="btn btn-small"
+                    href="#"
+                    aria-label="Ver demo do projeto Cardápio Vegetariano"
+                    >Detalhes</a
+                  >
+                  <a
+                    class="btn btn-small btn-ghost"
+                    href="https://github.com/heloeng/cardapio_vegetariano"
+                    target="_blank"
+                    aria-label="Ver repositório do projeto  Cardápio Vegetariano"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2  Minishell -->
+            <article class="card project-card">
+              <div class="card-media">
+                <img
+                  src="img/projeto_minishell.JPG"
+                  alt="Imagem do projeto Minishell"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">Minishell</h3>
+                <p class="card-text">
+                  Implementação de um shell em C com parsing, execução de
+                  comandos, pipes, redirecionamentos e builtins, seguindo o
+                  comportamento do Bash
+                </p>
+
+                <ul class="tags" aria-label="Tecnologias do projeto">
+                  <li>C</li>
+                  <li>Unix</li>
+                  <li>Makefile</li>
+                </ul>
+
+                <div class="card-actions">
+                  <a
+                    class="btn btn-small"
+                    href="#"
+                    target="_blank"
+                    aria-label="Ver detalhes do projeto Minishell"
+                    >Detalhes</a
+                  >
+                  <a
+                    class="btn btn-small btn-ghost"
+                    href="https://github.com/heloeng/minishell_ultimo"
+                    target="_blank"
+                    aria-label="Ver repositório do projeto Minishell"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 solong -->
+            <article class="card project-card">
+              <div class="card-media">
+                <img
+                  src="img/projeto_2d.JPG"
+                  alt="Imagem do projeto So_long"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="card-body">
+                <h3 class="card-title">so_long</h3>
+                <p class="card-text">
+                  Jogo 2D com leitura de mapa, movimentação, colisões e coleta.
+                </p>
+
+                <ul class="tags" aria-label="Tecnologias do projeto">
+                  <li>C</li>
+                  <li>MiniLibX</li>
+                  <li>Game Loop</li>
+                </ul>
+
+                <div class="card-actions">
+                  <a
+                    class="btn btn-small"
+                    href="#"
+                    aria-label="Ver detalhes do projeto so_long"
+                    >Detalhes</a
+                  >
+                  <a
+                    class="btn btn-small btn-ghost"
+                    href="https://github.com/heloeng/so_long"
+                    target="_blank"
+                    aria-label="Ver repositório do projeto so_long"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section class="section" id="habilidades" aria-label="Habilidades">
+        <div class="container">
+          <header class="section-head">
+            <h2>Habilidades</h2>
+            <p>O que eu uso no dia a dia e o que estou aprofundando.</p>
+          </header>
+
+          <div class="grid skills-grid">
+            <article class="card">
+              <h3 class="card-title">Linguagens</h3>
+              <ul class="list">
+                <li>C</li>
+                <li>Javascript</li>
+                <li>Java</li>
+                <li>Dart</li>
+                <li>SQL</li>
+                <!-- <li>HTML/CSS</li> -->
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Frameworks & Runtime</h3>
+              <ul class="list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>Flutter</li>
+                <!-- <li>HTML/CSS</li> -->
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Ferramentas & Ambientes</h3>
+              <ul class="list">
+                <li>Git/GitHub</li>
+                <li>GitLab</li>
+                <li>Linux</li>
+                <li>Postman</li>
+                <li>Insomnia</li>
+                <li>NPM / Yarn</li>
+                <li>Figma</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Boas práticas</h3>
+              <ul class="list">
+                <li>Acessibilidade</li>
+                <li>Responsividade</li>
+                <li>Organização de código</li>
+                <li>Testes Automatizados</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section class="section" id="sobre" aria-label="Sobre mim">
+        <div class="container">
+          <header class="section-head">
+            <h2>Sobre</h2>
+            <p>Um pouco da minha história e do que eu busco.</p>
+          </header>
+
+          <div class="about">
+            <div class="about-text">
+              <p>
+                Sou formada em Engenharia de Computação e Engenharia de Software
+                e atualmente curso Desenvolvimento Full Stack, em formação pela
+                Alpha EdTech. Tenho interesse em construir projetos que combinam
+                lógica, organização e boa experiência do usuário.
+              </p>
+              <p>
+                Busco evoluir com prática: criando, testando, refatorando e
+                documentando.
+              </p>
+
+              <a class="btn btn-primary" href="#contato">Vamos conversar</a>
+            </div>
+
+            <aside class="about-side card" aria-label="Destaques rápidos">
+              <h3 class="card-title">Destaques</h3>
+              <ul class="list">
+                <li>Projetos em C com foco em Unix</li>
+                <li>Projetos em C com foco em leitura de mapa 2d</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="section" id="contato" aria-label="Contato">
+        <div class="container">
+          <header class="section-head">
+            <h2>Contato</h2>
+            <p>
+              Fique à vontade para me enviar uma mensagem. Responderei o mais
+              rápido possível..
+            </p>
+          </header>
+
+          <form class="card form" action="#" method="post">
+            <div class="grid form-grid">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input
+                  id="nome"
+                  name="nome"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="field field-full">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <p class="form-hint"></p>
+          </form>
         </div>
       </section>
     </main>
-    <footer>© 2025 — Heloiza Mendes</footer>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="ano"></span> Heloiza Mendes.</p>
+        <a class="back-top" href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+
+  
   </body>
 </html>
